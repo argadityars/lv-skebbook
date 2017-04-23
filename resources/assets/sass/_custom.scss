@@ -70,7 +70,7 @@ body {
 
 		&[class^=col] {
 			padding: 0;
-		}	
+		}
 
 		.list-group {
 			li {
@@ -84,7 +84,7 @@ body {
 					color: #ea1830;
 					li {
 						background-color: #ead7d9;
-						border-right: 3px solid #ea1830;	
+						border-right: 3px solid #ea1830;
 					}
 				}
 			}
@@ -93,44 +93,44 @@ body {
 
 	#content {
 		margin-right: $grid-gutter-width/2;
-	}	
+	}
 
 	#pengetahuan {
-		background: url('../images/web/inbound.png'); 
-		background-size: cover; 
-		height: 250px; 
-		border-right: solid 10px $body-bg; 
-		color:white; 
+		background: url('../images/web/inbound.png');
+		background-size: cover;
+		height: 250px;
+		border-right: solid 10px $body-bg;
+		color:white;
 		padding-top:50px;
 	}
 
 	#upload {
-		background: url('../images/web/upload.png'); 
-		background-size: cover; 
-		background-position:center; 
-		height: 250px; 
-		border-left: solid 10px $body-bg; 
+		background: url('../images/web/upload.png');
+		background-size: cover;
+		background-position:center;
+		height: 250px;
+		border-left: solid 10px $body-bg;
 		border-right: solid 10px $body-bg;
-		text-align: center; 
+		text-align: center;
 		color: white;
 		padding-top: 7%;
 	}
 
 	#pembayaran {
-		background: url('../images/web/status-bayar.png'); 
-		background-size: cover; 
-		background-position:center; 
-		height: 114px; 
-		border-left: solid 10px $body-bg;  
+		background: url('../images/web/status-bayar.png');
+		background-size: cover;
+		background-position:center;
+		height: 114px;
+		border-left: solid 10px $body-bg;
 		padding-top:40px;
 	}
 
 	#order {
-		background: url('../images/web/order.png'); 
-		background-size: cover; 
-		height: 114px; 
-		text-align:center; 
-		border-left: solid 10px $body-bg;  
+		background: url('../images/web/order.png');
+		background-size: cover;
+		height: 114px;
+		text-align:center;
+		border-left: solid 10px $body-bg;
 		padding-top:20px;
 		color: #fff;
 	}
@@ -140,7 +140,7 @@ body {
 
 #featured-search {
 	margin: 0 15%;
-	
+
 	.panel {
 		position: relative;
 		top: -35px;
@@ -152,38 +152,36 @@ body {
 		border: 0;
 		box-shadow: none;
 	}
-} 
+}
+
+#featured-category {
+	margin-top: -30px;
+	margin-bottom: -30px;
+}
 
 #featured-content {
 	margin-top: $grid-gutter-width;
 	margin-bottom: $grid-gutter-width;
 	color: #fff;
 
-	#sejarah {
+	#feature-left {
 		height: $featured-base-height;
-		background: url('../images/web/picture1.jpg');
+		background: url('../images/web/picture-1.jpg');
 		background-size: cover;
 		padding:0;
 
 		.img-container {
+			text-align: center;
 			position: relative;
 			top: 50%;
 			transform: perspective(1px) translateY(-50%);
-			padding: 0 30%
-		}
-
-		@media(max-width: $screen-tablet) {
-			text-align: center;
-
-			.img-container {
-				padding: 0 10%;	
-			}
+			padding: 0 10%
 		}
 	}
 
-	#komik {
+	#feature-top {
 		height: $featured-base-height/2;
-		background: url('../images/web/picture2.jpg');
+		background: url('../images/web/picture-2.jpg');
 		background-size: cover;
 		border-bottom: $grid-gutter-width/2 solid $body-bg;
 
@@ -200,9 +198,9 @@ body {
 		}
 	}
 
-	#karya {
+	#feature-right {
 		height: $featured-base-height/2;
-		background: url('../images/web/picture3.jpg');
+		background: url('../images/web/picture-3.jpg');
 		background-size: cover;
 		border-bottom: $grid-gutter-width/2 solid $body-bg;
 
@@ -219,18 +217,19 @@ body {
 		}
 	}
 
-	#pengalaman {
+	#feature-bottom {
 		height: $featured-base-height/2;
-		background: url('../images/web/picture4.jpg');
+		background: url('../images/web/picture-4.jpg');
 		background-size: cover;
 		border-top: $grid-gutter-width/2 solid $body-bg;
 
 		.img-container {
 			position: relative;
-			top: 50%;
+			top: 30%;
 			transform: perspective(1px) translateY(-50%);
 			text-align: center;
-		}	
+			padding: 0 10%;
+		}
 
 		@media(max-width: $screen-phone) {
 			.img-container {
@@ -242,23 +241,15 @@ body {
 	}
 }
 
-#popular-product {
-	margin-bottom: $grid-gutter-width;
-
-	.book {
-		border: 1px solid $laravel-border-color;
-		margin-bottom: 10px;
+#product-popular {
+	.thumbnail {
+		background-color: white;
 	}
+}
 
-	.book-title {
-		padding: 0 10px;
-		margin-bottom: 5px;
-	}
-
-	.book-price {
-		padding: 0 10px;
-		color: $brand-info;
-		font-size: 14pt;
+#product-newest {
+	.thumbnail {
+		background-color: white;
 	}
 }
 
