@@ -28,28 +28,28 @@
 	<div class="row">
 			<div class="col-sm-3 col-xs-12">
 			    <div class="book">
-				    <a href="books">
+				    <a href="{{ url('books?q=&category_id=1') }}">
 					    <img src="{{ asset('images/web/Block1.jpg') }}" class="img-responsive book-image">
 					</a>
 				</div>
 			</div>
 			<div class="col-sm-3 col-xs-12">
 				<div class="book">
-				    <a href="books">
+				    <a href="{{ url('books?q=&category_id=6') }}">
 					    <img src="{{ asset('images/web/block2.jpg') }}" class="img-responsive book-image">
 					</a>
 				</div>
 			</div>
 			<div class="col-sm-3 col-xs-12">
 				<div class="book">
-				    <a href="books">
+				    <a href="{{ url('books?q=&category_id=10') }}">
 					    <img src="{{ asset('images/web/block3.jpg') }}" class="img-responsive book-image">
 					</a>
 				</div>
 			</div>
 			<div class="col-sm-3 col-xs-12">
 				<div class="book">
-				    <a href="books">
+				    <a href="{{ url('books?q=&category_id=16') }}">
 					    <img src="{{ asset('images/web/block4.jpg') }}" class="img-responsive book-image">
 					</a>
 				</div>
